@@ -1,0 +1,97 @@
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+
+.commentWrapper {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* .commentWrapper img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+} */
+
+.commentBox {
+    flex: 1;
+}
+
+.commentContent {
+    border-radius: 8px;
+    padding: 1rem 1rem 0 1rem;
+    background: var(--gray-700);
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.commentContent button {
+    color: var(--gray-400);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+}
+.commentContent button:hover {
+    color: var(--red-500);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.commentContent>p {
+    padding: 1rem 0;
+}
+
+.authorAndTime {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorAndTime>time {
+    font-size: 0.8rem;
+    color: var(--gray-400);
+}
+
+footer > button {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    text-shadow: 1px 1px 1px solid;
+    display: flex;
+    align-items: center;
+}
+footer > button svg {
+    margin-right: 0.6rem;
+}
+
+footer > button:hover {
+    font-weight: bold;
+}
+
+footer > button:focus {
+    color: var(--green-500);
+    border: 0;
+}
+
+footer span {
+    display: flex;
+    align-items: center;
+}
+
+footer > button span::before {
+    content: '•';
+    font-size: 1.3rem;
+    margin: 0 0.3rem;
+}
+
