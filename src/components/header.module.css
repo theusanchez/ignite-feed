@@ -1,0 +1,22 @@
+.headerContentContainer {
+    width: 100%;
+    display: flex;
+    padding: 1.25rem;
+    justify-content: center;
+
+}
+
+.header {
+    /* height: 100px; */
+    background-color: var(--gray-800);
+    display: flex;
+}
+
+.header img {
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.header h1 {
+    
+}
