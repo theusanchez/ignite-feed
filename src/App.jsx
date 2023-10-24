@@ -48,8 +48,6 @@ const posts = [
   },
 ]
 
-
-
 function App() {
   return (
     <div>
