@@ -3,9 +3,18 @@ import styles from './Comment.module.css'
 import { Avatar } from "./Avatar";
 import { format, formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
+import { useState } from "react";
 
 
 export function Comment({ author, publishedAt, content, onDeleteComment }) {
+
+    const [likeCount, setLikes] = useState(0)
+
+    function handleLikeCounter() {
+        setLikes((state) => {
+            return state + 1;
+        })
+    }
 
     function handleDeleteComment() {
         onDeleteComment(content[0].content)
@@ -39,9 +48,9 @@ export function Comment({ author, publishedAt, content, onDeleteComment }) {
                 </div>
 
                 <footer>
-                    <button>
+                    <button onClick={handleLikeCounter}>
                         <ThumbsUp />
-                        Aplaudir <span>03</span>
+                        Aplaudir <span>{likeCount}</span>
                     </button>
                 </footer>
             </div>
